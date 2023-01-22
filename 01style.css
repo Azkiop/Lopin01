@@ -1,6 +1,27 @@
 .top-title{background-color:#00BDBD}
+.frontpageimg{width:150px;background-color:#B5FFFF;}
+.expsize{width:2px;}
 .fntd{width:70px;}
+.fntd2{width:70px;}
 .fnsz {font-size:20px;font-weight:bold;color:#E8FFFF;}
-.sybold{font-weight:bold;background-color:#B5FFFF;}
-.sysleep{font-weight:bold;background-color:#008F8F;color:#E8FFFF;line: height 10px;}
+.sybold{font-weight:bold;background-color:#B5FFFF;color:#008A8A;width:70px;}
+.sybold2{font-weight:bold;background-color:#B5FFFF;color:#008A8A;width:50px;}
+.sleepsty{background-color:#00BDBD;width:420px;}
+.sysleep{height:40px;width:70px;font-weight:bold;background-color:#008F8F;color:#E8FFFF;}
+.sysleep1{height:40px;width:70px;font-weight:bold;background-color:#008F8F;color:#E8FFFF;}
 .fntsz{background-color:#00BDBD;font-weight:bold;color:#E8FFFF;}
+.border01{border-style: dashed; border-color: orange;}
+.action-style{font-size:18px;}
+.RE0boder{border-style: dashed; border-color: orange;}
+.RE0titile{font-size:18px;}
+.RE0{height:30px;font-size:18px;width:70px;background-color:#00BDBD}
+.bossimgtd{width:200px;}
+.bossfirstTB{background-color:#F59F00;font-weight:bold;color:#E8FFFF;}
+.bosstableTD{width:70px;background-color:#00BDBD;font-weight:bold;color:#E8FFFF;}
+.BossChallengeSty{font-size:5;}
+.pvptxt{font-size: 15px;}
+.PVPTD{background-color:#00BDBD;color:#E8FFFF;}
+.PVPfriend{width: 140px;height: 40px;background-color:#00BDBD;color:#E8FFFF;}
+.PVPnormal{width: 140px;height: 40px;background-color:#EB9900;color:#E8FFFF;}
+.PVPkill{width: 140px;height: 40px;background-color:#DB0000;color:#E8FFFF;}
+
