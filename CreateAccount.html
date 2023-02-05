@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <!--告訴瀏覽器編碼為utf-8-->
+    <meta charest="utf-8" />
+    <title>創建帳號</title>
+    <link rel="stylesheet"type="text/css"href="01style.css"href="01layout.css"/>
+</head>
+<body>
+    <table align="center">
+        <tr>
+            <td rowspan="2">
+                <img src="img/login.png" width="100" height="100">
+            </td>
+            <td align="center"class="CAtxtST">
+                <b>創建帳號角色</b>
+            </td>
+        </tr>
+        <tr>
+            <td align="center">請各位玩家詳記帳號 密碼 暱稱<br>
+                如忘記我也棒不了各位<br>
+                而且我也不是整天都有空<br>
+                可以幫各位找密碼 請各位好自為之</td>
+            <td rowspan="2">
+                <img src="img/login.png" width="100" height="100">
+            </td>
+        </tr>
+    </table>
+    <table align="center">
+        <tr>
+            <td> </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="index.html"style="text-decoration:none">
+                    <input class="indexbutton"type="button" value="返回登入畫面">
+                </a>
+            </td>
+        </tr>
+        <tr><td></td></tr>
+    </table>
+    <table align="center"class="border01"width="350">
+        <tr>
+            <td colspan="2">自選頭貼:下方預覽創建角色後將不得再更改</td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <!--圖片上傳HTL版-->
+                <input type="file" accept="image/*" onchange="loadFile(event)">
+                <script>
+                var loadFile = function(event) {
+                    var output = document.getElementById('output');
+                    output.src = URL.createObjectURL(event.target.files[0]);
+                    output.onload = function() {URL.revokeObjectURL(output.src) // free memory
+                    }
+                }
+                </script>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <img id="output"width="100" height="100"/>
+            </td>
+        </tr>
+        <tr>
+            <td align="center">玩家暱稱:</td>
+            <td><input id="name" type="name" maxlength="7"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="2">帳密皆不得超過12個字請自行保管好"不得修改"</td>
+        </tr>
+        <tr>
+            <td align="center">帳號:</td>
+            <td><input id="mail" type="email" ></td>
+        </tr>
+        <tr>
+            <td align="center">密碼:</td>
+            <td><input id="password" type="password" ></td>
+        </tr>
+    </table>
+    <table align="center">
+        <tr>
+            <td> </td>
+        </tr>
+        <tr>
+            <td>
+                <a >
+                    <input class="indexbutton"id = "btnSingUp"type="button" value="創建角色">
+                </a>
+            </td>
+        </tr>
+    </table>
+</body>
