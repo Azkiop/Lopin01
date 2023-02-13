@@ -8,7 +8,7 @@ var userPass = document.getElementById("password_field").value;
 firebase.auth().signInWithEmailAndPassword(userEmail, userPass)
 .then(function(){
   alert("登入成功")
-  location.href="01.html"
+  location.href="html/01.html"
 })
 .catch(function(error) {
   // Handle Errors here.
