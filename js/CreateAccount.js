@@ -7,6 +7,7 @@ var userPass = document.getElementById("password_field").value;
 firebase.auth().createUserWithEmailAndPassword(userEmail, userPass)
 .then(function(){
     alert("創建成功")
+    location.href="../index.html"
 })
 .catch(function (error) {
     // Handle Errors here.

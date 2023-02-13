@@ -29,7 +29,7 @@
     </table>
     <table align="center"width="300">
         <tr>
-            <td align="center"colspan="2">
+            <td align="center"colspan="3">
                 <a >
                     <input class="indexbutton"onclick="login()"type="button" value="登入">
                 </a>
@@ -48,21 +48,18 @@
             <td>
                 <img src="img/dan.jpg" width="20" height="20">
             </td>
-            <td>忘記帳密請跟作者說</td>
+            <td >忘記密碼</td>
             <td>
                 <img src="img/dan.jpg" width="20" height="20">
             </td>
         </tr>
         <tr>
-            <td align="center"colspan="3">作者DC:Azami#8046</td>
-        </tr>
-        <tr><td align="center"colspan="3">提交範例:</td></tr>
-        <tr>
-            <td align="center"colspan="3">
-                請註明你忘記的是密碼還是帳號<br>
-                例如忘記密碼請給我你的帳號和角色名子<br>
-                依此類推
+            <td align="center">
+                <a >
+                    <input class="indexbutton"onclick="forgot()"type="button" value="重設密碼">
+                </a>
             </td>
+            <td colspan="2"><input id="forgot"placeholder="Email..." ></td>
         </tr>
     </table>
     <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>

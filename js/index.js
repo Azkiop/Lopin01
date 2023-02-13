@@ -17,3 +17,18 @@ firebase.auth().signInWithEmailAndPassword(userEmail, userPass)
   alert("帳號或密碼錯誤");
 });
 }
+
+
+function forgot() {console.log();
+//重設密碼
+const emailAddress = document.getElementById('forgot').value;
+firebase.auth().sendPasswordResetEmail(emailAddress)
+.then(function() {
+  alert('已發送信件至信箱，請按照信件說明重設密碼');
+  // 送信後，強制頁面重整一次
+  window.location.reload(); 
+})
+.catch(function(error) {
+  alert("查詢無此帳號");
+});
+}
